@@ -8,10 +8,13 @@ public abstract class PizzaStore {
     {
         Pizza pizza;
 
-        pizza = createPizza(p);
+        pizza = createPizza(pizzaName);
+        pizza.prepare();
+        pizza.bake();
+        pizza.cut();
+        pizza.box();
 
+        return pizza;
     }
-
     protected abstract Pizza createPizza(String type);
-
 }
