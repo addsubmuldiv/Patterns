@@ -21,7 +21,6 @@ public class ObserverTest {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-
         }
     }
 }
